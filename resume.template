@@ -48,7 +48,7 @@
 		{{#if summary}}
 		<div class="summary">
 			<h3>About</h3>
-			<p>{{summary}}</p>
+			<p>{{{summary}}}</p>
 		</div>
 		{{/if}}
 		{{#if profiles.length}}
@@ -230,7 +230,7 @@
 			{{#if courses.length}}
 			<ul class="courses">
 				{{#each courses}}
-				<li>{{.}}</li>
+				<li>{{{.}}}</li>
 				{{/each}}
 			</ul>
 			{{/if}}
