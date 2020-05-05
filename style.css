@@ -178,11 +178,20 @@ header h2 {
 	overflow: hidden;
 }
 
+#languages,
+#interests,
+#skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 #languages .item,
 #interests .item,
 #skills .item {
-	float: left;
 	width: 50%;
+}
+h2 {
+  flex-basis: 100%;
 }
 
 #references,

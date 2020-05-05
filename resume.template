@@ -10,6 +10,9 @@
 	<style>
 	{{{css}}}
 	</style>
+  <style media="print">
+  {{{printcss}}}
+  </style>
 	
 	</head>
 	<body>
@@ -29,19 +32,19 @@
 		{{#if website}}
 		<div class="website">
 			<strong>Website</strong>
-			{{website}}
+			<a href="{{website}}">{{website}}</a>
 		</div>
 		{{/if}}
 		{{#if email}}
 		<div class="email">
 			<strong>Email</strong>
-			{{email}}
+			<a href="mailto:{{email}}">{{email}}</a>
 		</div>
 		{{/if}}
 		{{#if phone}}
 		<div class="phone">
 			<strong>Phone</strong>
-			{{phone}}
+			<a href="tel:{{phone}}">{{phone}}</a>
 		</div>
 		{{/if}}
 		</div>
