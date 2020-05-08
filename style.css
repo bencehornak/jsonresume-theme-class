@@ -3,7 +3,6 @@
 /* General, overall styling */
 body {
 	background: #F9F9F9;
-	font-size: 0.9em;
 	font-family: 'Lato', sans-serif;
 	margin-bottom: 100px;
 }
@@ -14,6 +13,10 @@ em {
 
 p {
 	line-height: 1.4;
+}
+
+li {
+  margin-bottom: 8px;
 }
 
 a {
