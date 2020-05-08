@@ -4,7 +4,6 @@
 body {
 	background: #F9F9F9;
 	font-family: 'Lato', sans-serif;
-	margin-bottom: 100px;
 }
 
 em {
@@ -114,14 +113,8 @@ header h2 {
 /* Work and volunteering experience styling */
 
 .work_date,
-.work_position,
-.work_website,
-.institution,
-.study_date,
-.qualification {
-	margin-bottom: 10px;
-	float: left;
-	width: 30%;
+.study_date {
+  color: #999;
 }
 
 .courses {
