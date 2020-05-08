@@ -98,9 +98,7 @@ header h2 {
 	padding-bottom: 10px;
 }
 
-.website,
-.email,
-.phone {
+.contact .item {
 	margin-bottom: 10px;
 	float: left;
 	width: 50%;
@@ -109,19 +107,6 @@ header h2 {
 .summary {
 	padding-top: 5px;
 	clear: both;
-}
-
-#profiles {
-	overflow: hidden;
-}
-
-#profiles .item {
-	float: left;
-	width: 50%;
-}
-
-.username{
-	margin-top: 10px;
 }
 
 /* End 'Basics' Styling */

@@ -30,53 +30,49 @@
 		<div class="contact">
 		<h3>Contact</h3>
 		{{#if website}}
-		<div class="website">
+		<div class="website item">
 			<strong>Website</strong>
 			<a href="{{website}}">{{website}}</a>
 		</div>
 		{{/if}}
 		{{#if email}}
-		<div class="email">
+		<div class="email item">
 			<strong>Email</strong>
 			<a href="mailto:{{email}}">{{email}}</a>
 		</div>
 		{{/if}}
 		{{#if phone}}
-		<div class="phone">
+		<div class="phone item">
 			<strong>Phone</strong>
 			<a href="tel:{{phone}}">{{phone}}</a>
 		</div>
 		{{/if}}
+    {{#each profiles}}
+    <div class="item">
+      {{#if network}}
+      <strong class="network">
+        {{network}}
+      </strong>
+      {{/if}}
+      {{#if url}}
+      <div class="url">
+        <a href="{{url}}">
+        {{#if username}}
+          {{username}}
+        {{else}}
+          {{url}}
+        {{/if}}
+        </a>
+      </div>
+      {{/if}}
+    </div>
+    {{/each}}
 		</div>
 		{{#if summary}}
 		<div class="summary">
 			<h3>About</h3>
 			<p>{{{summary}}}</p>
 		</div>
-		{{/if}}
-		{{#if profiles.length}}
-		<section id="profiles">
-			{{#each profiles}}
-			<div class="item">
-				{{#if network}}
-				<strong class="network">
-					{{network}}
-				</strong>
-				{{/if}}
-				{{#if url}}
-				<div class="url">
-					<a href="{{url}}">
-					{{#if username}}
-						{{username}}
-					{{else}}
-						{{url}}
-					{{/if}}
-					</a>
-				</div>
-				{{/if}}
-			</div>
-			{{/each}}
-		</section>
 		{{/if}}
 	</section>
 	{{/resume.basics}}
