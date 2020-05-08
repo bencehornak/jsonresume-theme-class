@@ -2,7 +2,7 @@ body {
 	background: none;
 }
 
-section .item {
+section .item, #languages, #interests, #skills {
 	page-break-inside: avoid;
 }
 
