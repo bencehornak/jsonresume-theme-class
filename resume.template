@@ -198,8 +198,20 @@
 		<div class="item">
 			
 			{{#if institution}}
-			<div class="institution">
+			<h3 class="institution">
 				{{institution}}
+			</h3>
+			{{/if}}
+
+			{{#if area}}
+			<h4 class="education_area">
+				{{area}}
+			</h4>
+			{{/if}}
+
+			{{#if gpa}}
+			<div class="education_gpa">
+				GPA: {{gpa}}
 			</div>
 			{{/if}}
 
