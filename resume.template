@@ -151,7 +151,6 @@
 				{{position}}
 			</div>
 			{{/if}}
-			{{#if website}}
 
 			<div class="work_date">
 				{{#if startDate}}
@@ -170,6 +169,7 @@
 				{{/if}}
 			</div>
 
+			{{#if website}}
 			<div class="work_website">
 				<a href="{{website}}">{{website}}</a>
 			</div>
